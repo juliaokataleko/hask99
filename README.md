@@ -1,12 +1,12 @@
-## hask99
-<img src="https://raw.githubusercontent.com/juliaokataleko/juliaokataleko.github.com/master/img/user-profile.PNG"/>
+## HASK99
+<img src="https://raw.githubusercontent.com/juliaokataleko/juliaokataleko.github.com/master/img/hask99.PNG"/>
 
 ### Sistema de perguntas e respostas em PHP
 
-| Desenvolverdor | [Julião F. Kataleko - JFK](http://huliaokataleko.github.io) |
+| Feito por | [Julião F. Kataleko - JFK](http://huliaokataleko.github.io) |
 |----------------|-------------------------------------------------------------|
-|Facebook        | [@juliaokataleko](http://facebook.com/juliaokataleko)       |
-|LinkedIn        | [@juliaokataleko](http://linkedin.com/juliaokataleko)       |
+| Facebook        | [@juliaokataleko](http://facebook.com/juliaokataleko)       |
+| LinkedIn        | [@juliaokataleko](http://linkedin.com/juliaokataleko)       |
 
 ## Instalação
 * Descarregue o projecto no seu computador
