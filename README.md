@@ -1,6 +1,6 @@
 ## hask99
-![] (inlcudes/img/post-form.png?w=512)
-![] (inlcudes/img/post-form.pngw=512)
+![](/inlcudes/img/post-form.png?w=512)
+![](/inlcudes/img/post-form.pngw=512)
 
 ### Sistema de perguntas e respostas em PHP
 
