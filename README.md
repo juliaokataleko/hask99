@@ -1,5 +1,5 @@
 ## hask99
-<img src="/inlcudes/img/post-form.png"/>
+<img src="https://github.com/juliaokataleko/hask99/inlcudes/img/post-form.png"/>
 
 ### Sistema de perguntas e respostas em PHP
 
