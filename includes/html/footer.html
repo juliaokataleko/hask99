@@ -1,0 +1,35 @@
+
+    <footer class="py-5 bg-gray" style="background:#dedede">
+      <div class="container">
+	  <p class="m-0 text-center text-dark">Faça perguntas. Responda as dúvidas dos outros.
+		<br/><br/>
+		<?php
+		if(isset($user) && $user->isLoggedIn()){
+		  if($user->hasPermission('admin')){
+			echo "<a target='_blank' href='admin' style='color:#444; margin-right:1em;'>Administração</a>";
+			} 
+		}
+		?>
+		<a style=' margin-right:1em;' href="help" target="_blank">Ajuda</a><a style='margin-right:1em;' target="_blank" href="privacypolicy">Política de privacidade</a> 
+		</p><br/>
+        <p class="m-0 text-center text-dark">&copy; Hask99 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="includes/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="includes/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script>
+		function expandTextarea(id) {
+    document.getElementById(id).addEventListener('keyup', function() {
+        this.style.overflow = 'hidden';
+        this.style.height = 0;
+        this.style.height = this.scrollHeight + 'px';
+		}, false);
+	}
+
+	expandTextarea('txtarea');
+	</script>
+</body>
+</html>

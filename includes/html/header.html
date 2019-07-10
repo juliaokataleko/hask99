@@ -1,0 +1,71 @@
+<link rel = "stylesheet" type = "text/css" href = "includes/assets/css/all.css" />
+<?php
+if(isset($user) && $user->isLoggedIn()){
+$notification = new Notification();
+$notification->findNotification($user->data()->user_id);
+$total = $notification->_db->count();
+}
+?>
+<!-- Navigation -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background:#249664; 
+	">
+      <div class="container" style="max-width:736px;">
+        <a class="navbar-brand" href="index">
+		<img src="includes/img/logow.png" style="width:4.5em; border: #fff 0px solid; border-radius:4px;"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="border:0;">
+          <span class="navbar-toggler-icon" style="border:0;"></span>
+				</button>
+				
+
+				<!--<form method="get" action="">
+					<div class="input-group" style="border:0px solid #ddd; border-radius: 15px;">
+						<input type="text" name="query" class="" style="border-radius:0; border:0; 
+						outline:none; border-bottom: 0; padding: 0 0.5em;" 
+						placeholder="Pesquise algo <?php echo ucwords(escape($user->data()->name));?>" aria-label="Pesquisar tópicos" 
+						aria-describedby="basic-addon2" name="query" value="<?php echo escape(Input::get('query'));?>"/>
+						<div class="input-group-append">
+							<button class="btn btn-primary" style="border-radius:0; background: #ffffff; color:#444; border:0;" type="submit"> <i class="fa fa-search"></i> </button>
+						</div>
+					</div>
+					</form>-->
+
+
+
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+		  <?php 
+		  
+		  if(isset($user) && $user->isLoggedIn()){
+	
+			if($user->data()->active == 0) {
+			Redirect::to('notactive');
+			}
+			$username = $user->data()->username;
+
+			if($total > 0){
+				$alert = "<span style='color: #d8ba0e'><i class='fa fa-bell'></i></span>";
+			}else {
+				$alert = "<span><i class='fa fa-bell'></i></span>";
+			}
+			echo "
+				<li class='nav-item'><a class='nav-link' href='index'><i class='fa fa-home'></i> </a></li>
+				<li class='nav-item'><a class='nav-link' href='post'><i class='fa fa-edit'></i> </a></li>
+				<li class='nav-item'><a class='nav-link' href='notifications'>$alert  </a></li>
+				<li class='nav-item'><a class='nav-link' href='profile?user=$username'><i class='fa fa-cog'></i> </a></li>
+			";
+
+			}else {
+				echo "
+					<li class='nav-item'><a class='nav-link' href='login'><i class='fa fa-sign-in-alt'></i> entrar</a></li>
+					<li class='nav-item'><a class='nav-link' href='register'><i class='fa fa-user-plus'></i> regista-te</a></li>
+					<li class='nav-item'><a class='nav-link' href='help'> ajuda</a></li>
+				";
+			}
+		  
+		   ?>
+          
+          </ul>
+        </div>
+      </div>
+    </nav>

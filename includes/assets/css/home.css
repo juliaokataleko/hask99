@@ -1,0 +1,277 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+*, *:before, *:after
+{
+    box-sizing: border-box;
+	margin:0; 
+	padding: 0;
+}
+
+html
+{
+    overflow-y: scroll;
+}
+
+body
+{
+  font-family: arial,'tw cen mt','monospace';
+	color:#455;
+	background:#EeEBeE;
+	font-size:13pt;
+	
+	
+}
+
+a
+{
+    text-decoration: none;
+	color:#119be0;
+}
+
+a:hover
+{
+    color: #2980b9;
+	text-decoration: none;
+}
+
+.navbar-nav > .nav-item > .nav-link {
+  color: #ffffff !important;
+}
+
+.content
+{
+    color:#223;
+    margin: 10px auto;
+	margin-top:0;
+    border-radius: 0px;
+	width:96%;
+	max-width:700px; 
+	margin-top: 10px;
+	border: 1px solid #ddd;
+	padding:1em 1em; 
+	background-color:#fff;
+}
+
+.loginBox
+{
+    color:#223;
+    margin: 10px auto;
+	margin-top:0;
+    border-radius: 0px;
+	width:100%;
+	max-width:600px; 
+	padding:1em 1em; 
+	background-color:#fff;
+}
+
+
+h1,h2,h3,h4,h5
+{
+    text-align: center;
+    color: #555;
+    font-weight: 100;
+    margin: 0 0 8px;
+	text-transform:uppercase;
+	font-size:18px;
+}
+
+hr{
+    color: hsl(0, 6%, 91%);
+    border: 0.5px solid hsl(0, 6%, 91%);
+    background: hsl(0, 6%, 91%);
+}
+span
+{
+   
+}
+
+p, h3
+{
+    text-align: left !important;
+    margin: 0px 0px 0px 0px;
+    padding-top: 0px;
+}
+
+div.info-alert
+{
+    color:#0B6DB7;
+    display:;
+    padding: 0 ;
+    margin-top: -20px;
+    margin-bottom: 5px;
+	font-size:12.5px;
+}
+.info-alert
+{
+    color:#0B6DB7;
+    display:;
+    padding: 0 ;
+    margin-top: -20px;
+    margin-bottom: 5px;
+	font-size:12.5px;
+}
+div.info-success
+{
+    color: rgb(82, 82, 82);
+    display: box;
+    text-align: center;
+    padding: 10px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    border: 1px solid darkcyan;
+    background: #87d896;
+	border-radius: 4px;
+}
+.tc{
+    font-size: 14PX;
+}
+
+
+
+.field-wrap
+{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.top-row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-row > div
+{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.top-row > div:last-child
+{
+    margin: 0;
+}
+
+.alert-success {
+	background: #5ebc98;
+	padding:10px;
+	text-align:center;
+	color:#fff;
+	margin: 10px 0;
+}
+.alert-error {
+	background: #d63b46;
+	padding:10px;
+	text-align:center;
+	color:#fff;
+	margin: 10px 0;
+}
+
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.pagination {
+  margin-bottom: 15px;
+}
+
+.quote-container {
+margin-top: 20px;
+position: relative;
+}
+note {
+color: #333;
+position: relative;
+width: 300px;
+margin: 0 auto;
+padding: 20px;
+font-family: Satisfy;
+font-size: 30px;
+box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+.note .author {
+display: block;
+margin: 40px 0 0 0;
+text-align: right;
+}
+.yellow {
+  background: #eae672;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(4deg);
+  padding:10px;
+}
+.pin {
+  background-color: #aaa;
+  display: block;
+  height: 32px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: -16px;
+  z-index: 1;
+}
+.pin:after {
+  background-color: #A31;
+  background-image: radial-gradient(25% 25%, circle, hsla(0,0%,100%,.3), hsla(0,0%,0%,.3));
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1),
+              inset 3px 3px 3px hsla(0,0%,100%,.2),
+              inset -3px -3px 3px hsla(0,0%,0%,.2),
+              23px 20px 3px hsla(0,0%,0%,.15);
+  content: '';
+  height: 12px;
+  left: -5px;
+  position: absolute;
+  top: -10px;
+  width: 12px;
+}
+.pin:before {
+  background-color: hsla(0,0%,0%,0.1);
+  box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+  content: '';
+
+  height: 24px;
+  width: 2px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+
+  transform: rotate(57.5deg);
+  -moz-transform: rotate(57.5deg);
+  -webkit-transform: rotate(57.5deg);
+  -o-transform: rotate(57.5deg);
+  -ms-transform: rotate(57.5deg);
+
+  transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+}
+
+/* persolnalized styles */
+.margin-right {
+  margin-right: 1em;
+}
+
+.color-red {
+  color: crimson;
+}
+
+.color-green {
+  color: #116615;
+}
+
+.color-yellow {
+  color: rgb(212, 175, 10);
+}

@@ -1,0 +1,13 @@
+Como instalar?
+
+	 - Envie os arquivo para o seu servidor
+	 - Cria uma base de dados no seu servidor
+	 - Exporte a base de dados da aplicação que está no ficheiro hask99_DB.sql
+	 - Altere as definições de conexão no ficheiro core/init.php
+
+	Acesse usando as seguintes credencias: username:juliao password:abcde
+	
+	E já está. Boa sorte.
+
+	Para dúvidas e qualquer tipo de ajuda...
+	Contacto: Email: juliofeli78@gmail.com Telefone: +244 922 660717
