@@ -1,6 +1,5 @@
 ## hask99
-![](/inlcudes/img/post-form.png?w=512)
-![](/inlcudes/img/post-form.pngw=512)
+<img src="/inlcudes/img/post-form.png"/>
 
 ### Sistema de perguntas e respostas em PHP
 
@@ -16,4 +15,4 @@
 * Importe a base de dados que está no ficheiro __hask_99.sql__ para o seu servidor
 * Acesse o sistema com o usuario __admin__ e a senha __12345__
 ## Versão
-1.0 ### 10.07.2019
+1.0 10.07.2019
